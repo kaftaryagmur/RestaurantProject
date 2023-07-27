@@ -24,6 +24,11 @@ namespace restaurantProject
             this.Close();
         }
 
+        private void MenuForm_Load(object sender, EventArgs e)
+        {
+            textBox1.Text = DateTime.Now.ToString("dd.MM.yyyy");
+        }
+
 
     }
 }

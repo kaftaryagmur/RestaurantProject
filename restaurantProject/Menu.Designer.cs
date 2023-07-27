@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuForm));
             pictureBox1 = new PictureBox();
             backButton = new Button();
@@ -36,6 +37,8 @@
             comboBoxSalad = new ComboBox();
             comboBoxDesert = new ComboBox();
             comboBoxDrink = new ComboBox();
+            textBox1 = new TextBox();
+            timer1 = new System.Windows.Forms.Timer(components);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -107,11 +110,24 @@
             comboBoxDrink.Size = new Size(199, 28);
             comboBoxDrink.TabIndex = 6;
             // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(460, 316);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(182, 27);
+            textBox1.TabIndex = 7;
+            // 
+            // timer1
+            // 
+            timer1.Enabled = true;
+            timer1.Interval = 1000;
+            // 
             // MenuForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1082, 753);
+            Controls.Add(textBox1);
             Controls.Add(comboBoxDrink);
             Controls.Add(comboBoxDesert);
             Controls.Add(comboBoxSalad);
@@ -125,6 +141,7 @@
             Text = "Menü";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -136,5 +153,7 @@
         private ComboBox comboBoxSalad;
         private ComboBox comboBoxDesert;
         private ComboBox comboBoxDrink;
+        private TextBox textBox1;
+        private System.Windows.Forms.Timer timer1;
     }
 }
