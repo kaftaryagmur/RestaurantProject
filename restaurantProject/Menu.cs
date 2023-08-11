@@ -27,7 +27,8 @@ namespace restaurantProject
         {
             InitializeComponent();
             choosenDish = new List<string>();
-            orderForm = new Siparis(this);
+            orderForm = new Siparis();
+
             vegetableDishList = new List<string>
             {
                 "Yoğurtlu Ispanak",
@@ -44,7 +45,7 @@ namespace restaurantProject
             meatDishList = new List<string>
             {
                 "Patlıcan Kebabı",
-                "Mantarlı Pirinç Roti",
+                "Mantarlı Piliç Roti",
                 "Hindi Sote",
                 "Etli Nohut",
                 "Avcı Usülü Tavuk",
@@ -84,7 +85,7 @@ namespace restaurantProject
             sideDishList = new List<string>
             {
                 "Humus",
-                "Patlıcan Salatası",
+                "Arpa Şehriye Salatası",
                 "Haydari",
                 "Cacık",
                 "Mevsim Salata",
@@ -118,15 +119,16 @@ namespace restaurantProject
                 "Naneli Limonata",
                 "Ayva Şerbeti",
                 "Şalgam Suyu",
-                "Gazoz",
+                "Gazoz"
             };
             Assignment(vegetableCheckBox, vegetableDishList);
             Assignment(meatCheckBox, meatDishList);
             Assignment(mainDishCheckBox, mainDishList);
-            Assignment(soupCheckBox, soupList);
             Assignment(sideDishCheckBox, sideDishList);
-            Assignment(dessertCheckBox, dessertList);
+            Assignment(soupCheckBox, soupList);
             Assignment(drinkCheckBox, drinkList);
+            Assignment(dessertCheckBox, dessertList);
+
 
         }
         private void timer1_Tick(object sender, EventArgs e)
@@ -148,8 +150,15 @@ namespace restaurantProject
                 checkBox.Text = yemekListesi[index];
                 yemekListesi.RemoveAt(index);
             }
-
         }
+
+        private void backButton_Click(object sender, EventArgs e)
+        {
+            Form1 main_page = new Form1();
+            main_page.ShowDialog();
+            this.Close();
+        }
+
         private void buttonSiparis_Click(object sender, EventArgs e)
         {
             choosenDish.Clear();
@@ -164,13 +173,88 @@ namespace restaurantProject
             orderForm.ShowDialog();
         }
 
-        private void backButton_Click(object sender, EventArgs e)
+        private string GetIngredientsForMeal(string mealName)
         {
-            Form1 main_page = new Form1();
-            main_page.ShowDialog();
-            this.Close();
+            string filePath = "C:/Users/kafta/source/restaurantProject/restaurantProject/Yemek.txt";
+            string[] lines = File.ReadAllLines(filePath);
+
+            foreach (string line in lines)
+            {
+                string[] parts = line.Split(',');
+
+                if (parts.Length >= 4 && parts[0].Trim() == mealName)
+                {
+                    string icerik = richTextBox1.Text;
+                    string yeni_icerik = mealName + parts[2].Trim() + ", " + parts[3] + ", " + parts[4] + ", " + parts[5];
+                    string güncel_icerik = icerik + "\n" + yeni_icerik;
+
+                    return güncel_icerik;
+                }
+            }
+
+            return "Malzemeler bulunamadı.";
+        }
+        private void vegetableCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (vegetableCheckBox != null && vegetableCheckBox.Checked)
+            {
+                string selectedMeal = vegetableCheckBox.Text;
+                string ingredients = GetIngredientsForMeal(selectedMeal);
+
+                richTextBox1.Text = ingredients;
+            }
         }
 
+        private void meatCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
 
+            string selectedMeal = meatCheckBox.Text;
+            string ingredients = GetIngredientsForMeal(selectedMeal);
+
+            richTextBox1.Text = ingredients;
+
+        }
+
+        private void mainDishCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+
+            string selectedMeal = mainDishCheckBox.Text;
+            string ingredients = GetIngredientsForMeal(selectedMeal);
+
+            richTextBox1.Text = ingredients;
+
+        }
+
+        private void soupCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            string selectedMeal = soupCheckBox.Text;
+            string ingredients = GetIngredientsForMeal(selectedMeal);
+
+            richTextBox1.Text = ingredients;
+        }
+
+        private void sideDishCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            string selectedMeal = sideDishCheckBox.Text;
+            string ingredients = GetIngredientsForMeal(selectedMeal);
+
+            richTextBox1.Text = ingredients;
+        }
+
+        private void drinkCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            string icerik = richTextBox1.Text;
+            string yeni_icerik = drinkCheckBox.Text;
+
+            richTextBox1.Text = icerik + "\n" + yeni_icerik;
+        }
+
+        private void dessertCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            string selectedMeal = dessertCheckBox.Text;
+            string ingredients = GetIngredientsForMeal(selectedMeal);
+
+            richTextBox1.Text = ingredients;
+        }
     }
 }

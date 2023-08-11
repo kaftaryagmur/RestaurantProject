@@ -23,5 +23,19 @@ namespace restaurantProject
             main_page.ShowDialog();
             this.Close();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            StorageTransaction depo = new StorageTransaction();
+            depo.ShowDialog();
+            this.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MealTransaction meal = new MealTransaction();
+            meal.ShowDialog();
+            this.Close();
+        }
     }
 }

@@ -12,7 +12,7 @@ namespace restaurantProject
 {
     public partial class Siparis : Form
     {
-        public Siparis(MenuForm menuForm)
+        public Siparis()
         {
             InitializeComponent();
         }
@@ -20,6 +20,13 @@ namespace restaurantProject
         {
             lstSiparis.Items.Clear();
             lstSiparis.Items.AddRange(siparisler.ToArray());
+        }
+
+        private void Siparis_Load(object sender, EventArgs e)
+        {
+            Random random = new Random();
+            int randomNumber = random.Next(24, 61);
+            label3.Text = randomNumber.ToString() + " dk.";
         }
     }
 }

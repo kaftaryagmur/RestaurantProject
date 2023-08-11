@@ -1,0 +1,69 @@
+Yemek Adı, Yemek Türü, Yemek Malzemeleri, Fiyat
+Yoğurtlu Ispanak,Sebze Yemeği,(Ispanak,Yoğurt,Sarımsak,Tuz),21.5
+Fırında Karnabahar,Sebze Yemeği,(Karnabahar,Süt,Un,Peynir),28
+Taze Fasulye,Sebze Yemeği,(Taze fasulye, Soğan, Domates, Zeytinyağı),35
+Biber Dolması,Sebze Yemeği,(Biber, Kıyma, Pirinç, Soğan),45
+Patates Musakka,Sebze Yemeği,(Patates, Kıyma, Patlıcan, Domates),
+Ispanaklı Patates Köftesi,Sebze Yemeği,(Ispanak, Patates, Soğan, Un),30
+Kabak Mücveri,Sebze Yemeği, (Kabak, Yumurta, Un, Maydanoz),20.5
+Patlıcan Musakka, Sebze Yemeği, (Patlıcan, Kıyma, Patates, Domates), 42
+Kabak Dolması, Sebze Yemeği, (Kabak, Kıyma, Pirinç, Soğan), 39
+Zeytinyağlı Yaprak Sarma, Sebze Yemeği, (Üzüm yaprağı, Pirinç, Soğan, Zeytinyağı), 27
+Patlıcan Kebabı, Et Yemeği, (Patlıcan, Kıyma, Biber, Domates), 63
+Mantarlı Piliç Roti, Et Yemeği, (Mantar, Pirinç, Soğan, Tavuk suyu), 72
+Hindi Sote, Et Yemeği, (Hindi eti, Sebzeler, Soğan, Baharatlar), 56
+Etli Nohut, Et Yemeği, (Et, Nohut, Soğan, Domates), 89
+Avcı Usülü Tavuk, Et Yemeği, (Tavuk eti, Mantar, Soğan, Domates), 68
+Tavuk Şiş Kebabı, Et Yemeği, (Tavuk eti, Biber, Soğan, Baharatlar), 75
+Etli Patlıcan Yemeği, Et Yemeği, (Et, Patlıcan, Domates, Soğan), 54
+Dana Sote, Et Yemeği, (Dana eti, Soğan, Biber, Domates), 91
+Köfte Izgara, Et Yemeği, (Kıyma, Soğan, Baharatlar, Biber salçası), 62
+Kuzu Tandır, Et Yemeği, (Kuzu eti, Yoğurt, Baharatlar, Limon suyu), 83
+Kremalı Makarna, Ana Yemek, (Makarna, Krema, Peynir, Tuz), 42
+Pirinç Pilavı, Ana Yemek, (Pirinç, Su, Tereyağı, Tuz), 50
+Bulgur Pilavı, Ana Yemek, (Bulgur, Su, Tereyağı, Tuz), 36
+Yoğurtlu Makarna, Ana Yemek, (Makarna, Yoğurt, Sarımsak, Tuz), 45
+Soslu Makarna, Ana Yemek, (Makarna, Domates, Tuz, Baharatlar), 38
+Ispanaklı Börek, Ana Yemek, (Ispanak, Yufka, Peynir, Yumurta), 57
+Nohutlu Pilav, Ana Yemek, (Nohut, Pirinç, Soğan, Baharatlar), 51
+Sebzeli Bulgur Pilavı, Ana Yemek, (Bulgur, Sebzeler, Soğan, Baharatlar), 53
+Patatesli Börek, Ana Yemek, (Patates, Yufka, Peynir, Tereyağı), 30
+Kıymalı Su Böreği, Ana Yemek, (Yufka, Kıyma, Süt, Yumurta), 44
+Mercimek Çorbası, Çorba, (Kırmızı mercimek, Soğan, Domates, Baharatlar), 28
+Ezogelin Çorbası, Çorba, (Mercimek, Bulgur, Domates, Soğan), 36
+Domates Çorbası, Çorba, (Domates, Soğan, Un, Tereyağı), 25
+Arpa Şehriye Çorbası, Çorba, (Arpa şehriye, Sebzeler, Tavuk suyu, Baharatlar), 33
+Yoğurt Çorbası, Çorba, (Yoğurt, Un, Nane, Tuz), 22
+Mantar Çorbası, Çorba, (Mantar, Soğan, Krema, Tavuk suyu), 31
+Tarhana Çorbası, Çorba, (Tarhana, Su, Domates, Tereyağı), 37
+İşkembe Çorbası, Çorba, (İşkembe, Sarımsak, Sirke, Tuz), 24
+Kremalı Mantar Çorbası, Çorba, (Mantar, Krema, Soğan, Tavuk suyu), 29
+Tavuklu Şehriye Çorbası, Çorba, (Tavuk eti, Şehriye, Sebzeler, Tavuk suyu), 40
+Humus, Meze/Salata, (Nohut, Tahin, Zeytinyağı, Limon suyu), 24
+Arpa Şehriye Salatası, Meze/Salata, (Arpa şehriye, Sebzeler, Limon suyu, Zeytinyağı), 28
+Haydari, Meze/Salata, (Yoğurt, Sarımsak, Nane, Zeytinyağı), 22
+Cacık, Meze/Salata, (Yoğurt, Salatalık, Nane, Sarımsak), 26
+Mevsim Salata, Meze/Salata, (Mevsim sebzeleri, Yeşillikler, Zeytinyağı, Limon suyu), 30
+Yoğurtlu Havuç Tarator, Meze/Salata, (Yoğurt, Havuç, Sarımsak, Ceviz), 27
+Acılı Ezme, Meze/Salata, (Domates, Biber, Soğan, Limon suyu), 25
+Yoğurtlu Semizotu Salatası, Meze/Salata, (Yoğurt, Semizotu, Sarımsak, Zeytinyağı), 23
+Yoğurtlu Köz Patlıcan, Meze/Salata, (Yoğurt, Patlıcan, Sarımsak, Zeytinyağı), 29
+Çoban Salata, Meze/Salata, (Domates, Salatalık, Biber, Zeytinyağı), 21
+Baklava, Tatlı, (Yufka, Ceviz, Şeker, Tereyağı), 34
+Kadayıf, Tatlı, (Tel kadayıf, Fındık, Şeker, Tereyağı), 37
+Revani, Tatlı, (Un, Şeker, Yumurta, Portakal suyu), 31
+Dondurma, Tatlı, (Süt, Krema, Şeker, Aroma Vericiler), 39
+Şekerpare, Tatlı, (Un, Tereyağı, Şeker, Antep fıstığı), 32
+Trileçe, Tatlı, (Kek, Süt, Şeker, Krema), 33
+Muhallebi, Tatlı, (Süt, Un, Şeker, Vanilin), 35
+Tiramisu, Tatlı, (Bisküvi, Kahve, Mascarpone peyniri, Kakao), 38
+Profiterol, Tatlı, (Hamur, Krema, Çikolata sos, Şeker), 40
+Ayran, İçecek, (Yoğurt, Su, Tuz), 15
+Limonata, İçecek, (Limon suyu, Su, Şeker), 20
+Karadut Suyu, İçecek, (Karadut, Su, Şeker), 20
+Meyve Suyu, İçecek, (Tercihe bağlı meyve, Su, Şeker), 20
+Soğuk Çay, İçecek, (Çay, Su, Şeker), 16
+Maden Suyu, İçecek, (Maden suyu, Tercihe bağlı meyve suyu), 20
+Naneli Limonata, İçecek, (Limon suyu, Su, Şeker, Nane), 23
+Ayva Şerbeti, İçecek, (Ayva, Su, Şeker, Limon suyu), 19
+Şalgam Suyu, İçecek, (Şalgam, Su), 15

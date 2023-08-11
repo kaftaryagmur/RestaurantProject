@@ -1,4 +1,6 @@
-﻿namespace restaurantProject
+﻿using System.Drawing.Drawing2D;
+
+namespace restaurantProject
 {
     partial class Siparis
     {
@@ -32,13 +34,18 @@
             pictureBox1 = new PictureBox();
             lstSiparis = new ListBox();
             label1 = new Label();
+            label2 = new Label();
+            label3 = new Label();
+            label4 = new Label();
+            pictureBox2 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(0, 0);
+            pictureBox1.Location = new Point(-1, -1);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(479, 685);
             pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
@@ -47,38 +54,95 @@
             // 
             // lstSiparis
             // 
+            lstSiparis.BackColor = Color.LightBlue;
+            lstSiparis.BorderStyle = BorderStyle.FixedSingle;
+            lstSiparis.Cursor = Cursors.No;
+            lstSiparis.Font = new Font("Segoe Print", 9F, FontStyle.Bold, GraphicsUnit.Point);
             lstSiparis.FormattingEnabled = true;
-            lstSiparis.ItemHeight = 20;
-            lstSiparis.Location = new Point(113, 227);
+            lstSiparis.ItemHeight = 26;
+            lstSiparis.Location = new Point(123, 448);
             lstSiparis.Name = "lstSiparis";
-            lstSiparis.Size = new Size(263, 264);
+            lstSiparis.Size = new Size(211, 158);
             lstSiparis.TabIndex = 3;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.BackColor = Color.DarkSlateGray;
-            label1.Font = new Font("Century", 19.8000011F, FontStyle.Italic, GraphicsUnit.Point);
+            label1.BackColor = Color.DarkCyan;
+            label1.BorderStyle = BorderStyle.FixedSingle;
+            label1.Font = new Font("Segoe Print", 19.8000011F, FontStyle.Italic, GraphicsUnit.Point);
             label1.ForeColor = SystemColors.Control;
-            label1.Location = new Point(94, 147);
+            label1.Location = new Point(77, 45);
             label1.Name = "label1";
-            label1.Size = new Size(301, 40);
+            label1.Size = new Size(322, 61);
             label1.TabIndex = 4;
             label1.Text = "Siparişiniz alındı!";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.BackColor = Color.LightCyan;
+            label2.BorderStyle = BorderStyle.FixedSingle;
+            label2.Font = new Font("Segoe Print", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Location = new Point(123, 120);
+            label2.Name = "label2";
+            label2.Size = new Size(230, 32);
+            label2.TabIndex = 5;
+            label2.Text = "Tahmini teslimat zamanı";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.BorderStyle = BorderStyle.Fixed3D;
+            label3.Font = new Font("Segoe Print", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.Location = new Point(196, 171);
+            label3.Name = "label3";
+            label3.Size = new Size(78, 37);
+            label3.TabIndex = 6;
+            label3.Text = "label3";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe Print", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.Image = (Image)resources.GetObject("label4.Image");
+            label4.Location = new Point(121, 412);
+            label4.Name = "label4";
+            label4.Size = new Size(143, 26);
+            label4.TabIndex = 7;
+            label4.Text = "Sipariş Detayları:";
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(141, 220);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(190, 190);
+            pictureBox2.SizeMode = PictureBoxSizeMode.CenterImage;
+            pictureBox2.TabIndex = 8;
+            pictureBox2.TabStop = false;
             // 
             // Siparis
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(477, 684);
+            Controls.Add(pictureBox2);
+            Controls.Add(label4);
+            Controls.Add(label3);
+            Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(lstSiparis);
             Controls.Add(pictureBox1);
             Icon = (Icon)resources.GetObject("$this.Icon");
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "Siparis";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Sipariş";
+            Load += Siparis_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -88,5 +152,9 @@
         private PictureBox pictureBox1;
         private ListBox lstSiparis;
         private Label label1;
+        private Label label2;
+        private Label label3;
+        private Label label4;
+        private PictureBox pictureBox2;
     }
 }

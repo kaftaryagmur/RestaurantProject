@@ -30,10 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RestaurantForm));
             pictureBox1 = new PictureBox();
+            backButton = new Button();
             button1 = new Button();
             button2 = new Button();
-            button4 = new Button();
-            backButton = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -43,61 +42,68 @@
             pictureBox1.Location = new Point(0, 0);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(1082, 755);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
-            // 
-            // button1
-            // 
-            button1.Location = new Point(119, 303);
-            button1.Name = "button1";
-            button1.Size = new Size(218, 122);
-            button1.TabIndex = 1;
-            button1.Text = "Yemek Ekle";
-            button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            button2.Location = new Point(525, 324);
-            button2.Name = "button2";
-            button2.Size = new Size(218, 122);
-            button2.TabIndex = 2;
-            button2.Text = "Yemek Sil";
-            button2.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            button4.Location = new Point(147, 562);
-            button4.Name = "button4";
-            button4.Size = new Size(218, 122);
-            button4.TabIndex = 4;
-            button4.Text = "Siparişleri Yazdır";
-            button4.UseVisualStyleBackColor = true;
             // 
             // backButton
             // 
             backButton.BackColor = Color.SteelBlue;
+            backButton.BackgroundImage = (Image)resources.GetObject("backButton.BackgroundImage");
             backButton.FlatAppearance.BorderColor = Color.SteelBlue;
-            backButton.FlatAppearance.BorderSize = 0;
+            backButton.FlatStyle = FlatStyle.Flat;
+            backButton.Font = new Font("Segoe UI", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
             backButton.Location = new Point(976, 712);
             backButton.Name = "backButton";
             backButton.Size = new Size(94, 29);
             backButton.TabIndex = 5;
-            backButton.Text = "Back";
+            backButton.Text = "Geri";
             backButton.UseVisualStyleBackColor = false;
             backButton.Click += backButton_Click;
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.White;
+            button1.BackgroundImage = (Image)resources.GetObject("button1.BackgroundImage");
+            button1.BackgroundImageLayout = ImageLayout.Stretch;
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            button1.Location = new Point(212, 483);
+            button1.Name = "button1";
+            button1.Size = new Size(216, 98);
+            button1.TabIndex = 6;
+            button1.Text = "Depo İşlemleri";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            // 
+            // button2
+            // 
+            button2.BackgroundImage = (Image)resources.GetObject("button2.BackgroundImage");
+            button2.BackgroundImageLayout = ImageLayout.Stretch;
+            button2.FlatAppearance.BorderSize = 0;
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            button2.Location = new Point(616, 483);
+            button2.Name = "button2";
+            button2.Size = new Size(216, 98);
+            button2.TabIndex = 7;
+            button2.Text = "Yemek İşlemleri";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // RestaurantForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1082, 753);
-            Controls.Add(backButton);
-            Controls.Add(button4);
             Controls.Add(button2);
             Controls.Add(button1);
+            Controls.Add(backButton);
             Controls.Add(pictureBox1);
             Icon = (Icon)resources.GetObject("$this.Icon");
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "RestaurantForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Restaurant";
@@ -108,9 +114,8 @@
         #endregion
 
         private PictureBox pictureBox1;
+        private Button backButton;
         private Button button1;
         private Button button2;
-        private Button button4;
-        private Button backButton;
     }
 }

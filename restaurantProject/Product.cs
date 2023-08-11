@@ -9,11 +9,21 @@ namespace restaurantProject
     public class Product
     {
         public string ProductName { get; set; }
-        public DateTime UretimTarihi { get; set; }
-        public DateTime SonKullanmaTarihi { get; set; }
-        public float CalorieGram { get; set; }
-        public float Stock { get; set; }
-        public float Price { get; set; }
+        public int Stock { get; set; }
+        public string SellByDate { get; set; }
+        public int Calorie { get; set; }
+        public decimal Price { get; set; }
 
+        public Product(string productName, int stock, string sellByDate, int calorie, decimal price)
+        {
+            ProductName = productName;
+            Stock = stock;
+            SellByDate = sellByDate;
+            Calorie = calorie;
+            Price = price;
+        }
     }
+
+
+
 }
